@@ -7,18 +7,25 @@ This an Ark implementation of the Aces Encoded Listener API.
 
 Install `ark-java-client` dependency to your local maven repository:
 
-```
+```shell
 cd ~
 git clone git@github.com:bradyo/ark-java-client.git
 cd ~/ark-java-client
 mvn install
 ```
 
-```
+Build the application `jar` package:
+
+```shell
 cd ~
 git clone git@github.com:ark-aces/aces-encoded-listener-ark.git
 cd ~/aces-encoded-listener-ark
 mvn package
+```
+
+Build and run docker container:
+
+```shell
 docker build -t aces-encoded-listener-ark .
 docker run -p 8085:8085 aces-encoded-listener-ark
 ```
