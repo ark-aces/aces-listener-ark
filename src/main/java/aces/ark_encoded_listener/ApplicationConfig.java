@@ -2,7 +2,10 @@ package aces.ark_encoded_listener;
 
 import aces.ark_encoded_listener.common.IdentifierGenerator;
 import ark_java_client.*;
+import ark_java_client.lib.NiceObjectMapper;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -45,6 +48,19 @@ public class ApplicationConfig {
     @Bean
     public Integer scanTransactionDepth(Environment environment) {
         return environment.getProperty("scanTransactionDepth", Integer.class);
+    }
+
+    @Bean
+    public NiceObjectMapper logObjectMapper() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+
+        return new NiceObjectMapper(objectMapper);
+    }
+
+    @Bean
+    public NiceObjectMapper dtoObjectMapper() {
+        return new NiceObjectMapper(new ObjectMapper());
     }
 
 }

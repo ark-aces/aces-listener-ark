@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.ZoneOffset;
@@ -19,7 +20,7 @@ public class SubscriptionController {
     private final SubscriptionRepository subscriptionRepository;
 
     @PostMapping("/subscriptions")
-    public Subscription postSubscription(CreateSubscriptionRequest createSubscriptionRequest) {
+    public Subscription postSubscription(@RequestBody CreateSubscriptionRequest createSubscriptionRequest) {
         String identifier = identifierGenerator.generate();
 
         SubscriptionEntity subscriptionEntity = new SubscriptionEntity();
@@ -33,7 +34,7 @@ public class SubscriptionController {
         subscription.setIdentifier(subscriptionEntity.getIdentifier());
         subscription.setCallbackUrl(subscriptionEntity.getCallbackUrl());
         subscription.setMinConfirmations(subscriptionEntity.getMinConfirmations());
-        subscription.setCreatedAt(subscriptionEntity.toString());
+        subscription.setCreatedAt(subscriptionEntity.getCreatedAt().toString());
 
         return subscription;
     }

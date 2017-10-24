@@ -5,10 +5,12 @@ import lombok.Data;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.time.ZonedDateTime;
 
 @Data
 @Entity
+@Table(name = "subscriptions")
 public class SubscriptionEntity {
 
     @Id

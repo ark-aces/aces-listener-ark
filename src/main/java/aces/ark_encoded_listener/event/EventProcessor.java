@@ -1,4 +1,4 @@
-package aces.ark_encoded_listener.listener;
+package aces.ark_encoded_listener.event;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

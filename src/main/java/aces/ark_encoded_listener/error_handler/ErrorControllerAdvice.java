@@ -41,7 +41,7 @@ public class ErrorControllerAdvice {
         log.error("Uncaught exception thrown", exception);
 
         Error error = new Error();
-        error.setCode("server_error");
+        error.setCode(ErrorCodes.serverError);
         error.setMessage("An unexpected error has occurred.");
 
         return error;

@@ -1,13 +1,16 @@
-spring:
-  datasource:
-    url: "jdbc:h2:/tmp/ark-encoded-listener.db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE"
-    driver-class-name: "org.h2.Driver"
-  jpa:
-    hibernate:
-      ddl-auto: "update"
+#spring:
+#  datasource:
+#    url: "jdbc:h2:/tmp/ark-encoded-listener.db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE"
+#    driver-class-name: "org.h2.Driver"
+#  jpa:
+#    hibernate:
+#      ddl-auto: "create-drop"
 
 arkNetwork:
   name: "mainnet"
 
 # Number of Transactions to scan through each execution cycle
 scanTransactionDepth: 500
+
+server:
+  port: 8085
