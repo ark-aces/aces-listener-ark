@@ -17,6 +17,8 @@ public class EventEntity {
     @GeneratedValue
     private Long id;
 
+    private String remoteId;
+
     private String data;
 
     private ZonedDateTime createdAt;

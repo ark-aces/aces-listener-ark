@@ -3,7 +3,7 @@
 This an Ark implementation of the Aces Encoded Listener API.
 
 
-## Running
+## Run Application in Docker Container
 
 ```
 mvn package
@@ -11,7 +11,7 @@ docker build -t aces-encoded-listener-ark .
 docker run -p 8085:8085 aces-encoded-listener-ark
 ```
 
-## Consuming API
+## Example Usage
 
 Consumers register their Http callback endpoint by posting to the `subscriptions`
 endpoint. Immediately following successful a subscription the encoded
