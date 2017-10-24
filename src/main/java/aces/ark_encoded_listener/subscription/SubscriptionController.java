@@ -21,11 +21,14 @@ public class SubscriptionController {
 
     @PostMapping("/subscriptions")
     public Subscription postSubscription(@RequestBody CreateSubscriptionRequest createSubscriptionRequest) {
+        // todo: validate request body
+
         String identifier = identifierGenerator.generate();
 
         SubscriptionEntity subscriptionEntity = new SubscriptionEntity();
         subscriptionEntity.setIdentifier(identifier);
         subscriptionEntity.setCallbackUrl(createSubscriptionRequest.getCallbackUrl());
+        subscriptionEntity.setMinConfirmations(createSubscriptionRequest.getMinConfirmations());
         subscriptionEntity.setCreatedAt(ZonedDateTime.now(ZoneOffset.UTC));
         subscriptionEntity.setStatus(SubscriptionStatus.active);
         subscriptionRepository.save(subscriptionEntity);

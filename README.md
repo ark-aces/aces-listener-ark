@@ -7,7 +7,8 @@ This an Ark implementation of the Aces Encoded Listener API.
 
 ```
 mvn package
-docker 
+docker build -t aces-encoded-listener-ark .
+docker run -p 8085:8085 aces-encoded-listener-ark
 ```
 
 ## Consuming API

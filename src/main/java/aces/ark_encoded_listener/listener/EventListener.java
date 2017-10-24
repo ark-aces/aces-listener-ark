@@ -11,6 +11,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
@@ -32,9 +33,7 @@ public class EventListener {
             for (Integer offset = 0; offset < scanDepthTransactions; offset += limit) {
                 List<Transaction> transactions = arkClient.getTransactions(offset);
                 subscriptionEntities.parallelStream().forEach(subscriptionEntity -> {
-                    transactions.parallelStream().forEach(transaction -> {
-                        eventDeliveryService.deliverEvent(subscriptionEntity, transaction);
-                    });
+                    transactions.forEach(transaction -> eventDeliveryService.deliverEvent(subscriptionEntity, transaction));
                 });
 
             }

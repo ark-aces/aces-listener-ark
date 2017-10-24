@@ -23,6 +23,10 @@ public class EventDeliveryService {
     private final NiceObjectMapper dtoObjectMapper;
 
     public void deliverEvent(SubscriptionEntity subscriptionEntity, Transaction transaction) {
+        if (transaction.getConfirmations() < subscriptionEntity.getMinConfirmations()) {
+            log.info("Skipping transaction due to insufficient confirmations");
+        }
+
         String callbackUrl = subscriptionEntity.getCallbackUrl();
 
         Event event = new Event();
