@@ -1,6 +1,7 @@
-package aces.ark_encoded_listener.event;
+package com.arkaces.aces_listener_ark;
 
-import ark_java_client.lib.NiceObjectMapper;
+import com.arkaces.aces_server.aces_listener.event.Event;
+import com.arkaces.aces_server.common.json.NiceObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

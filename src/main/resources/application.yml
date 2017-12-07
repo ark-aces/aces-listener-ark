@@ -13,4 +13,4 @@ arkNetwork:
 scanTransactionDepth: 500
 
 server:
-  port: 8085
+  port: 9091

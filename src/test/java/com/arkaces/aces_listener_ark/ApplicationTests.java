@@ -1,4 +1,4 @@
-package aces.ark_encoded_listener;
+package com.arkaces.aces_listener_ark;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package aces.ark_encoded_listener;
+package com.arkaces.aces_listener_ark;
 
 import ark_java_client.ArkClient;
 import lombok.RequiredArgsConstructor;
@@ -13,7 +13,7 @@ import java.time.ZonedDateTime;
 @Component
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Slf4j
-public class ApplicationScheduler {
+public class ArkPeerUpdateWorker {
 
     private final ArkClient arkClient;
 

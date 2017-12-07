@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>aces</groupId>
-	<artifactId>aces-encoded-listener-ark</artifactId>
+	<groupId>com.arkaces</groupId>
+	<artifactId>aces_listener_ark</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>aces-encoded-listener-ark</name>
-	<description>Aces Encoded Listener implementation for Ark</description>
+	<name>aces_listener_ark</name>
+	<description>ACES Listener implementation for Ark</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -54,23 +54,30 @@
             <artifactId>snakeyaml</artifactId>
             <version>1.16</version>
         </dependency>
-
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.5</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.retry</groupId>
 			<artifactId>spring-retry</artifactId>
 			<version>1.1.5.RELEASE</version>
 		</dependency>
-
 		<dependency>
 			<groupId>ark-java-client</groupId>
 			<artifactId>ark-java-client</artifactId>
 			<version>0.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.arkaces</groupId>
+			<artifactId>aces_server_lib</artifactId>
+			<version>3.3.0</version>
 		</dependency>
 	</dependencies>
 

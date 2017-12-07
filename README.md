@@ -18,16 +18,16 @@ Build the application `jar` package:
 
 ```bash
 cd ~
-git clone git@github.com:ark-aces/aces-encoded-listener-ark.git
-cd ~/aces-encoded-listener-ark
+git clone git@github.com:ark-aces/aces-listener-ark.git
+cd ~/aces-listener-ark
 mvn package
 ```
 
 Build and run docker container:
 
 ```bash
-docker build -t aces-encoded-listener-ark .
-docker run -p 8085:8085 aces-encoded-listener-ark
+docker build -t aces-listener-ark .
+docker run -p 9091:9091 aces-listener-ark
 ```
 
 ## Example Usage
@@ -38,18 +38,18 @@ listener will send all new Ark transactions to the registered callback
 URL.
 
 ```bash
-curl -X POST 'localhost:8085/subscriptions' \
+curl -X POST 'localhost:9091/subscriptions' \
 -H 'Content-type: application/json' \
 -d '{
-  "callbackUrl": "http://localhost:8085/event-logger",
+  "callbackUrl": "http://localhost:9091/event-logger",
   "minConfirmations": 5
 }'
 ```
 
 ```json
 {
-  "identifier" : "TwpEVgS64WKG4WalMgBk",
-  "callbackUrl" : "http://localhost:8085/event-logger",
+  "id" : "1c2ddeb7-cf74-478d-8f77-2f326b8c2db4",
+  "callbackUrl" : "http://localhost:9091/event-logger",
   "createdAt" : "2017-10-24T04:15:17.091Z"
 }
 ```

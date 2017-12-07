@@ -1,9 +1,10 @@
-package aces.ark_encoded_listener.listener;
+package com.arkaces.aces_listener_ark.listener;
 
-import aces.ark_encoded_listener.subscription.SubscriptionEntity;
-import aces.ark_encoded_listener.subscription.SubscriptionRepository;
 import ark_java_client.ArkClient;
 import ark_java_client.Transaction;
+import com.arkaces.aces_server.aces_listener.event_delivery.EventDeliveryService;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,24 +18,26 @@ import java.util.List;
 @Slf4j
 public class EventListener {
 
-    private final Integer scanDepthTransactions;
+    private final Integer scanTransactionDepth;
     private final ArkClient arkClient;
-    private final SubscriptionRepository subscriptionRepository;
     private final EventDeliveryService eventDeliveryService;
+
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     @Scheduled(fixedDelay = 2000)
     public void scanTransactions() {
+        log.info("Scanning for transactions");
         try {
-            List<SubscriptionEntity> subscriptionEntities = subscriptionRepository.findAll();
-
             // todo: review this scanning so that we don't miss any transactions
             Integer limit = 500;
-            for (Integer offset = 0; offset < scanDepthTransactions; offset += limit) {
+            for (Integer offset = 0; offset < scanTransactionDepth; offset += limit) {
                 List<Transaction> transactions = arkClient.getTransactions(offset);
-                subscriptionEntities.parallelStream().forEach(subscriptionEntity -> {
-                    transactions.forEach(transaction -> eventDeliveryService.deliverEvent(subscriptionEntity, transaction));
-                });
-
+                for (Transaction transaction : transactions) {
+                    String transactionId = transaction.getId();
+                    JsonNode data = objectMapper.convertValue(transaction, JsonNode.class);
+                    log.info("Found transaction " + transactionId);
+                    eventDeliveryService.saveSubscriptionEvents(transactionId, data);
+                }
             }
         }
         catch (Exception e) {
