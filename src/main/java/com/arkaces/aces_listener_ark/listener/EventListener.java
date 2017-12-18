@@ -36,8 +36,9 @@ public class EventListener {
                     String transactionId = transaction.getId();
                     String recipientAddress = transaction.getRecipientId();
                     JsonNode data = objectMapper.convertValue(transaction, JsonNode.class);
-                    log.info("Found transaction " + transactionId);
-                    eventDeliveryService.saveSubscriptionEvents(transactionId, recipientAddress, data);
+                    Integer confirmations = transaction.getConfirmations();
+                    log.info("Found transaction " + transactionId + ", confirmations = " + confirmations);
+                    eventDeliveryService.saveSubscriptionEvents(transactionId, recipientAddress, confirmations, data);
                 }
             }
         }
