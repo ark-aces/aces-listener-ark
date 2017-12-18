@@ -34,9 +34,10 @@ public class EventListener {
                 List<Transaction> transactions = arkClient.getTransactions(offset);
                 for (Transaction transaction : transactions) {
                     String transactionId = transaction.getId();
+                    String recipientAddress = transaction.getRecipientId();
                     JsonNode data = objectMapper.convertValue(transaction, JsonNode.class);
                     log.info("Found transaction " + transactionId);
-                    eventDeliveryService.saveSubscriptionEvents(transactionId, data);
+                    eventDeliveryService.saveSubscriptionEvents(transactionId, recipientAddress, data);
                 }
             }
         }
