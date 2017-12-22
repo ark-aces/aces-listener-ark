@@ -2,6 +2,7 @@ package com.arkaces.aces_listener_ark;
 
 import ark_java_client.*;
 import com.arkaces.aces_server.aces_listener.config.AcesListenerConfig;
+import com.arkaces.aces_server.ark_basic_authorization.ArkBasicAuthorizationConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -10,7 +11,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @Configuration
 @EnableScheduling
-@Import(AcesListenerConfig.class)
+@Import({AcesListenerConfig.class, ArkBasicAuthorizationConfig.class})
 public class ApplicationConfig {
 
     @Bean
