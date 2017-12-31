@@ -1,4 +1,4 @@
-package com.arkaces.aces_listener_ark.listener;
+package com.arkaces.aces_listener_ark;
 
 import ark_java_client.ArkClient;
 import ark_java_client.Transaction;
@@ -16,7 +16,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Slf4j
-public class EventListener {
+public class ArkEventListener {
 
     private final Integer scanTransactionDepth;
     private final ArkClient arkClient;
@@ -28,10 +28,11 @@ public class EventListener {
     public void scanTransactions() {
         log.info("Scanning for transactions");
         try {
-            // todo: review this scanning so that we don't miss any transactions
-            Integer limit = 500;
+            // todo: review this scanning so that we don't miss any transactions since limit/offset doesn't
+            // give stable pagination when elements are being actively added
+            Integer limit = 50;
             for (Integer offset = 0; offset < scanTransactionDepth; offset += limit) {
-                List<Transaction> transactions = arkClient.getTransactions(offset);
+                List<Transaction> transactions = arkClient.getTransactions(limit, offset);
                 for (Transaction transaction : transactions) {
                     String transactionId = transaction.getId();
                     String recipientAddress = transaction.getRecipientId();
