@@ -1,3 +1,9 @@
+serverInfo:
+  name: "AcesListenerArk"
+  description: "ACES Listener implementation for Ark"
+  version: "1.0.0"
+  websiteUrl: "https://arkaces.com"
+  
 #spring:
 #  datasource:
 #    url: "jdbc:h2:/tmp/ark-encoded-listener.db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE"
@@ -6,11 +12,31 @@
 #    hibernate:
 #      ddl-auto: "create-drop"
 
-arkNetwork:
-  name: "mainnet"
+# Ark network config YML that listening will be performed against
+arkNetworkConfigPath: "ark_network_config/localnet.yml"
 
 # Number of Transactions to scan through each execution cycle
 scanTransactionDepth: 500
 
 server:
   port: 9091
+
+arkAuth:
+  requireAuth: true
+
+  # Ark Network to use for fetching and broadcasting ark auth transactions
+  arkNetworkConfigPath: "ark_network_config/localnet.yml"
+
+  # The address that fees are sent to
+  serviceArkAddress: "ARNJJruY6RcuYCXcwWsu4bx9kyZtntqeAx"
+
+  # Amount of ARK required in your stake account address
+  minArkStake: "0"
+
+  # Amount of ARK to charge payment account every 24 hours to keep
+  # API key active
+  arkFee: "0"
+
+logging:
+  level:
+    com.arkaces.aces_listener_ark.ArkEventListener: ERROR
