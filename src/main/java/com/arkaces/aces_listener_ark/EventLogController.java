@@ -1,6 +1,6 @@
 package com.arkaces.aces_listener_ark;
 
-import com.arkaces.aces_server.aces_listener.event.Event;
+import com.arkaces.aces_server.aces_listener.event.EventPayload;
 import com.arkaces.aces_server.common.json.NiceObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,8 +18,8 @@ public class EventLogController {
     private final NiceObjectMapper logObjectMapper;
 
     @PostMapping("/public/eventLogger")
-    public Event postEvent(@RequestBody Event event) {
-        log.info(logObjectMapper.writeValueAsString(event));
-        return event;
+    public EventPayload postEvent(@RequestBody EventPayload eventPayload) {
+        log.info(logObjectMapper.writeValueAsString(eventPayload));
+        return eventPayload;
     }
 }
