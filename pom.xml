@@ -24,6 +24,13 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>bintray-ark-aces-aces-maven</id>
+			<url>https://dl.bintray.com/ark-aces/aces-maven</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -71,7 +78,7 @@
 			<version>1.1.5.RELEASE</version>
 		</dependency>
 		<dependency>
-			<groupId>ark-java-client</groupId>
+			<groupId>com.arkaces</groupId>
 			<artifactId>ark-java-client</artifactId>
 			<version>0.6.0</version>
 		</dependency>
