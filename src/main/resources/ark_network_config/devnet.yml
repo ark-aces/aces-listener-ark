@@ -1,0 +1,24 @@
+scheme: http
+version: 1.0
+netHash: 578e820911f24e039733b45e4882b73e301f813a0d2c31330dafda84534ffa23
+pubKeyHash: 0x52
+seedPeers:
+  -
+    hostname: 167.114.29.52
+    port: 4002
+  -
+    hostname: 167.114.29.53
+    port: 4002
+  -
+    hostname: 167.114.29.55
+    port: 4002
+trustedPeers:
+  -
+    hostname: 167.114.29.52
+    port: 4002
+  -
+    hostname: 167.114.29.53
+    port: 4002
+  -
+    hostname: 167.114.29.55
+    port: 4002
