@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  listener-ark:
+    build:
+      context: .
+    command: mvn spring-boot:run
+    environment:
+      APP_PORT: 9091
+      ARK_NETWORK: "devnet"
+      SERVICE_ARK_ADDRESS: "<your ARK address where fees will be sent to>"
+      SERVICE_MIN_ARK_STAKE: "0"
+      SERVICE_MIN_ARK_FEE: "1"
+      SERVICE_REQUIRE_AUTH: 0
+    volumes:
+      - listener-ark:/app
+    expose:
+      - "9091"
+    ports:
+      - "9091:9091"
+
+volumes:
+  listener-ark:
