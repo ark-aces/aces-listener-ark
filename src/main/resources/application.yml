@@ -22,7 +22,7 @@ server:
   port: 9091
 
 arkAuth:
-  requireAuth: true
+  requireAuth: false
 
   # Ark Network to use for fetching and broadcasting ark auth transactions
   arkNetworkConfigPath: "ark_network_config/localnet.yml"
