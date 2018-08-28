@@ -5,7 +5,7 @@
 
 	<groupId>com.arkaces</groupId>
 	<artifactId>aces_listener_ark</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<packaging>jar</packaging>
 
 	<name>aces_listener_ark</name>
@@ -80,7 +80,7 @@
 		<dependency>
 			<groupId>com.arkaces</groupId>
 			<artifactId>ark-java-client</artifactId>
-			<version>0.7.0</version>
+			<version>0.9.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>

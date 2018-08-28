@@ -1,27 +1,25 @@
-# ACES Listener for Ark
+# ACES Listener Ark
 
-This an Ark implementation of the Aces Encoded Listener API.
+This an Ark implementation of the ACES Listener API. Consumers create subscriptions to register a
+callback URL. The listener app then scans the ARK blockchain and sends new transactions to subscribers.
 
 
-## Run Application in Docker Container
+## Run Application 
 
-Run application:
+Run application in development:
 
 ```
 mvn spring-boot:run
 ```
 
-## Authorization
 
-This app uses HTTP Basic auth.
+To run the application in a live environment, you can build a jar package using `mvn package` and then
+run the jar generated under `/target` build directory with you custom configuration:
 
 ```
-curl -X POST 'localhost:9091/accounts' \
--H 'Content-type: application/json' \
--d '{
- "userArkAddress": "ARNJJruY6RcuYCXcwWsu4bx9kyZtntqeAx"
-}'
+java -jar application.jar --spring.config.location=file:/etc/my-application-config.yml
 ```
+
 
 ## Example Usage
 

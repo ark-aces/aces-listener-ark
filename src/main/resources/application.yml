@@ -1,9 +1,11 @@
 serverInfo:
   name: "AcesListenerArk"
   description: "ACES Listener implementation for Ark"
-  version: "1.0.0"
+  version: "1.1.0"
   websiteUrl: "https://arkaces.com"
-  
+
+# The default application database is an in memory database. Uncomment the lines 10-16 below to use a
+# local file database instead:
 #spring:
 #  datasource:
 #    url: "jdbc:h2:/tmp/ark-encoded-listener.db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE"
@@ -13,7 +15,7 @@ serverInfo:
 #      ddl-auto: "create-drop"
 
 # Ark network config YML that listening will be performed against
-arkNetworkConfigPath: "ark_network_config/localnet.yml"
+arkNetworkConfigPath: "ark_network_config/mainnet.yml"
 
 # Number of Transactions to scan through each execution cycle
 scanTransactionDepth: 500
@@ -24,19 +26,7 @@ server:
 arkAuth:
   requireAuth: false
 
-  # Ark Network to use for fetching and broadcasting ark auth transactions
-  arkNetworkConfigPath: "ark_network_config/localnet.yml"
-
-  # The address that fees are sent to
-  serviceArkAddress: "ARNJJruY6RcuYCXcwWsu4bx9kyZtntqeAx"
-
-  # Amount of ARK required in your stake account address
-  minArkStake: "0"
-
-  # Amount of ARK to charge payment account every 24 hours to keep
-  # API key active
-  arkFee: "0"
-
+# The following restricts logging to errors. Comment out lines 31-33 below to get more verbose logging
 logging:
   level:
     com.arkaces.aces_listener_ark.ArkEventListener: ERROR
