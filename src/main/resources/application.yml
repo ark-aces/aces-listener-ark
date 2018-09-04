@@ -4,15 +4,18 @@ serverInfo:
   version: "1.1.0"
   websiteUrl: "https://arkaces.com"
 
-# The default application database is an in memory database. Uncomment the lines 10-16 below to use a
-# local file database instead:
-#spring:
-#  datasource:
-#    url: "jdbc:h2:/tmp/ark-encoded-listener.db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE"
-#    driver-class-name: "org.h2.Driver"
-#  jpa:
-#    hibernate:
-#      ddl-auto: "create-drop"
+spring:
+  datasource:
+    platform: "postgres"
+    url: "jdbc:postgresql://localhost:5432/aces_listener_ark_db"
+    username: "postgres"
+    password: "password"
+  jpa:
+    hibernate:
+      ddl-auto: "validate"
+
+flyway:
+  enabled: true
 
 # Ark network config YML that listening will be performed against
 arkNetworkConfigPath: "ark_network_config/mainnet.yml"
@@ -21,12 +24,10 @@ arkNetworkConfigPath: "ark_network_config/mainnet.yml"
 scanTransactionDepth: 500
 
 server:
+  # Port the application runs on
   port: 9091
 
-arkAuth:
-  requireAuth: false
-
 # The following restricts logging to errors. Comment out lines 31-33 below to get more verbose logging
-logging:
-  level:
-    com.arkaces.aces_listener_ark.ArkEventListener: ERROR
+#logging:
+#  level:
+#    com.arkaces.aces_listener_ark.ArkEventListener: ERROR

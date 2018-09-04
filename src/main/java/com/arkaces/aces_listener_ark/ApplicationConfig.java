@@ -2,7 +2,7 @@ package com.arkaces.aces_listener_ark;
 
 import ark_java_client.*;
 import com.arkaces.aces_server.aces_listener.config.AcesListenerConfig;
-import com.arkaces.aces_server.ark_auth.ArkAuthConfig;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -11,7 +11,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @Configuration
 @EnableScheduling
-@Import({AcesListenerConfig.class, ArkAuthConfig.class})
+@Import({AcesListenerConfig.class})
+@Slf4j
 public class ApplicationConfig {
 
     @Bean
@@ -21,6 +22,8 @@ public class ApplicationConfig {
         ArkNetwork arkNetwork = arkNetworkFactory.createFromYml(arkNetworkConfigPath);
 
         HttpArkClientFactory httpArkClientFactory = new HttpArkClientFactory();
+
+        log.info("Bootstrapping ARK client with network peers");
         return httpArkClientFactory.create(arkNetwork);
     }
 

@@ -4,17 +4,31 @@ This an Ark implementation of the ACES Listener API. Consumers create subscripti
 callback URL. The listener app then scans the ARK blockchain and sends new transactions to subscribers.
 
 
-## Run Application 
+## Run Application
 
-Run application in development:
+### Development
+
+Set up a local database instance using docker:
+
+```
+docker run -d -p 5432:5432 \
+--name aces_listener_ark_db \
+-e POSTGRES_USER=postgres \
+-e POSTGRES_PASSWORD=password \
+-e POSTGRES_DB=aces_listener_ark_db \
+postgres:9.6.1
+```
+
+Run application using maven:
 
 ```
 mvn spring-boot:run
 ```
 
+### Production
 
 To run the application in a live environment, you can build a jar package using `mvn package` and then
-run the jar generated under `/target` build directory with you custom configuration:
+run the jar app generated under `/target` build directory with you custom configuration:
 
 ```
 java -jar application.jar --spring.config.location=file:/etc/my-application-config.yml
