@@ -3,618 +3,174 @@ version: 1.0
 netHash: 578e820911f24e039733b45e4882b73e301f813a0d2c31330dafda84534ffa23
 pubKeyHash: 0x1e
 epoch: 2017-03-21 13:00:00
-seedPeers:
-  -
-    hostname: 45.63.74.5
-    port: 4002
-  -
-    hostname: 167.114.29.50
-    port: 4002
-  -
-    hostname: 167.114.29.45
-    port: 4002
-  -
-    hostname: 167.114.43.35
-    port: 4002
-  -
-    hostname: 104.129.43.144
-    port: 4002
-  -
-    hostname: 167.114.29.58
-    port: 4002
-  -
-    hostname: 173.253.129.20
-    port: 4002
-  -
-    hostname: 62.113.246.106
-    port: 4002
-  -
-    hostname: 45.76.218.117
-    port: 4002
-  -
-    hostname: 158.69.193.185
-    port: 4002
-  -
-    hostname: 144.217.194.188
-    port: 4002
-  -
-    hostname: 167.114.29.57
-    port: 4002
-  -
-    hostname: 167.114.29.40
-    port: 4002
-  -
-    hostname: 167.114.29.63
-    port: 4002
-  -
-    hostname: 185.177.21.65
-    port: 4002
-  -
-    hostname: 167.114.29.62
-    port: 4002
-  -
-    hostname: 167.114.29.54
-    port: 4002
-  -
-    hostname: 45.76.139.131
-    port: 4002
-  -
-    hostname: 138.68.29.19
-    port: 4002
-  -
-    hostname: 216.174.63.138
-    port: 4002
-  -
-    hostname: 213.32.9.98
-    port: 4002
-  -
-    hostname: 137.74.168.191
-    port: 4002
-  -
-    hostname: 104.236.122.76
-    port: 4002
-  -
-    hostname: 167.114.29.47
-    port: 4002
-  -
-    hostname: 167.114.29.37
-    port: 4002
-  -
-    hostname: 45.63.42.140
-    port: 4002
-  -
-    hostname: 45.33.86.168
-    port: 4002
-  -
-    hostname: 108.61.209.209
-    port: 4002
-  -
-    hostname: 167.114.29.33
-    port: 4002
-  -
-    hostname: 107.170.196.22
-    port: 4002
-  -
-    hostname: 178.62.102.209
-    port: 4002
-  -
-    hostname: 145.239.88.3
-    port: 4002
-  -
-    hostname: 167.114.43.37
-    port: 4002
-  -
-    hostname: 145.239.88.2
-    port: 4002
-  -
-    hostname: 217.182.70.37
-    port: 4002
-  -
-    hostname: 185.5.54.0
-    port: 4002
-  -
-    hostname: 45.76.174.177
-    port: 4002
-  -
-    hostname: 216.174.63.137
-    port: 4002
-  -
-    hostname: 167.114.29.59
-    port: 4002
-  -
-    hostname: 104.238.165.129
-    port: 4002
-  -
-    hostname: 217.182.79.88
-    port: 4002
-  -
-    hostname: 167.114.29.61
-    port: 4002
-  -
-    hostname: 51.255.198.137
-    port: 4002
-  -
-    hostname: 167.114.29.38
-    port: 4002
-  -
-    hostname: 167.114.43.33
-    port: 4002
-  -
-    hostname: 45.77.117.174
-    port: 4002
-  -
-    hostname: 213.32.9.97
-    port: 4002
-  -
-    hostname: 193.70.1.222
-    port: 4002
-  -
-    hostname: 45.76.39.61
-    port: 4002
-  -
-    hostname: 204.10.184.45
-    port: 4002
-  -
-    hostname: 45.76.93.4
-    port: 4002
-  -
-    hostname: 167.114.29.46
-    port: 4002
-  -
-    hostname: 91.121.1.174
-    port: 4002
-  -
-    hostname: 165.227.59.129
-    port: 4002
-  -
-    hostname: 167.114.29.44
-    port: 4002
-  -
-    hostname: 139.99.156.231
-    port: 4002
-  -
-    hostname: 164.8.251.90
-    port: 4002
-  -
-    hostname: 167.114.29.56
-    port: 4002
-  -
-    hostname: 108.61.169.37
-    port: 4002
-  -
-    hostname: 104.238.189.78
-    port: 4002
-  -
-    hostname: 173.254.228.67
-    port: 4002
-  -
-    hostname: 204.10.184.46
-    port: 4002
-  -
-    hostname: 66.70.207.89
-    port: 4002
-  -
-    hostname: 172.110.20.39
-    port: 4002
-  -
-    hostname: 137.74.47.141
-    port: 4002
-  -
-    hostname: 167.114.29.41
-    port: 4002
-  -
-    hostname: 167.114.29.52
-    port: 4002
-  -
-    hostname: 167.114.43.41
-    port: 4002
-  -
-    hostname: 51.254.103.18
-    port: 4002
-  -
-    hostname: 167.114.43.47
-    port: 4002
-  -
-    hostname: 45.76.136.154
-    port: 4002
-  -
-    hostname: 167.114.29.39
-    port: 4002
-  -
-    hostname: 167.114.29.34
-    port: 4002
-  -
-    hostname: 138.197.165.165
-    port: 4002
-  -
-    hostname: 167.114.43.34
-    port: 4002
-  -
-    hostname: 145.239.88.101
-    port: 4002
-  -
-    hostname: 45.76.245.155
-    port: 4002
-  -
-    hostname: 167.114.43.43
-    port: 4002
-  -
-    hostname: 91.134.115.30
-    port: 4002
-  -
-    hostname: 46.231.204.207
-    port: 4002
-  -
-    hostname: 167.114.43.46
-    port: 4002
-  -
-    hostname: 138.197.29.215
-    port: 4002
-  -
-    hostname: 104.238.177.174
-    port: 4002
-  -
-    hostname: 109.154.47.137
-    port: 4002
-  -
-    hostname: 104.207.138.122
-    port: 4002
-  -
-    hostname: 138.68.21.196
-    port: 4002
-  -
-    hostname: 167.114.29.36
-    port: 4002
-  -
-    hostname: 165.227.150.45
-    port: 4002
-  -
-    hostname: 37.59.70.165
-    port: 4002
-  -
-    hostname: 94.177.218.138
-    port: 4002
-  -
-    hostname: 167.114.29.55
-    port: 4002
-  -
-    hostname: 51.254.201.227
-    port: 4002
-  -
-    hostname: 167.114.43.48
-    port: 4002
-  -
-    hostname: 104.154.82.122
-    port: 4002
-  -
-    hostname: 217.182.78.226
-    port: 4002
-  -
-    hostname: 207.154.220.137
-    port: 4002
-  -
-    hostname: 195.181.219.91
-    port: 4002
-  -
-    hostname: 192.155.91.248
-    port: 4002
-  -
-    hostname: 167.114.29.53
-    port: 4002
-  -
-    hostname: 43.224.34.53
-    port: 4002
-  -
-    hostname: 167.114.43.40
-    port: 4002
-  -
-    hostname: 138.197.206.43
-    port: 4002
-
 trustedPeers:
--
-    hostname: 45.63.74.5
-    port: 4002
--
-    hostname: 167.114.29.50
-    port: 4002
--
-    hostname: 167.114.29.45
-    port: 4002
--
-    hostname: 167.114.43.35
-    port: 4002
--
-    hostname: 104.129.43.144
-    port: 4002
--
-    hostname: 167.114.29.58
-    port: 4002
--
-    hostname: 173.253.129.20
-    port: 4002
--
-    hostname: 62.113.246.106
-    port: 4002
--
-    hostname: 45.76.218.117
-    port: 4002
--
-    hostname: 158.69.193.185
-    port: 4002
--
-    hostname: 144.217.194.188
-    port: 4002
--
-    hostname: 167.114.29.57
-    port: 4002
--
-    hostname: 167.114.29.40
-    port: 4002
--
-    hostname: 167.114.29.63
-    port: 4002
--
-    hostname: 185.177.21.65
-    port: 4002
--
-    hostname: 167.114.29.62
-    port: 4002
--
-    hostname: 167.114.29.54
-    port: 4002
--
-    hostname: 45.76.139.131
-    port: 4002
--
-    hostname: 138.68.29.19
-    port: 4002
--
-    hostname: 216.174.63.138
-    port: 4002
--
-    hostname: 213.32.9.98
-    port: 4002
--
-    hostname: 137.74.168.191
-    port: 4002
--
-    hostname: 104.236.122.76
-    port: 4002
--
-    hostname: 167.114.29.47
-    port: 4002
--
-    hostname: 167.114.29.37
-    port: 4002
--
-    hostname: 45.63.42.140
-    port: 4002
--
-    hostname: 45.33.86.168
-    port: 4002
--
-    hostname: 108.61.209.209
-    port: 4002
--
-    hostname: 167.114.29.33
-    port: 4002
--
-    hostname: 107.170.196.22
-    port: 4002
--
-    hostname: 178.62.102.209
-    port: 4002
--
-    hostname: 145.239.88.3
-    port: 4002
--
-    hostname: 167.114.43.37
-    port: 4002
--
-    hostname: 145.239.88.2
-    port: 4002
--
-    hostname: 217.182.70.37
-    port: 4002
--
-    hostname: 185.5.54.0
-    port: 4002
--
-    hostname: 45.76.174.177
-    port: 4002
--
-    hostname: 216.174.63.137
-    port: 4002
--
-    hostname: 167.114.29.59
-    port: 4002
--
-    hostname: 104.238.165.129
-    port: 4002
--
-    hostname: 217.182.79.88
-    port: 4002
--
-    hostname: 167.114.29.61
-    port: 4002
--
-    hostname: 51.255.198.137
-    port: 4002
--
-    hostname: 167.114.29.38
-    port: 4002
--
-    hostname: 167.114.43.33
-    port: 4002
--
-    hostname: 45.77.117.174
-    port: 4002
--
-    hostname: 213.32.9.97
-    port: 4002
--
-    hostname: 193.70.1.222
-    port: 4002
--
-    hostname: 45.76.39.61
-    port: 4002
--
-    hostname: 204.10.184.45
-    port: 4002
--
-    hostname: 45.76.93.4
-    port: 4002
--
-    hostname: 167.114.29.46
-    port: 4002
--
-    hostname: 91.121.1.174
-    port: 4002
--
-    hostname: 165.227.59.129
-    port: 4002
--
-    hostname: 167.114.29.44
-    port: 4002
--
-    hostname: 139.99.156.231
-    port: 4002
--
-    hostname: 164.8.251.90
-    port: 4002
--
-    hostname: 167.114.29.56
-    port: 4002
--
-    hostname: 108.61.169.37
-    port: 4002
--
-    hostname: 104.238.189.78
-    port: 4002
--
-    hostname: 173.254.228.67
-    port: 4002
--
-    hostname: 204.10.184.46
-    port: 4002
--
-    hostname: 66.70.207.89
-    port: 4002
--
-    hostname: 172.110.20.39
-    port: 4002
--
-    hostname: 137.74.47.141
-    port: 4002
--
-    hostname: 167.114.29.41
-    port: 4002
--
-    hostname: 167.114.29.52
-    port: 4002
--
-    hostname: 167.114.43.41
-    port: 4002
--
-    hostname: 51.254.103.18
-    port: 4002
--
-    hostname: 167.114.43.47
-    port: 4002
--
-    hostname: 45.76.136.154
-    port: 4002
--
-    hostname: 167.114.29.39
-    port: 4002
--
-    hostname: 167.114.29.34
-    port: 4002
--
-    hostname: 138.197.165.165
-    port: 4002
--
-    hostname: 167.114.43.34
-    port: 4002
--
-    hostname: 145.239.88.101
-    port: 4002
--
-    hostname: 45.76.245.155
-    port: 4002
--
-    hostname: 167.114.43.43
-    port: 4002
--
-    hostname: 91.134.115.30
-    port: 4002
--
-    hostname: 46.231.204.207
-    port: 4002
--
-    hostname: 167.114.43.46
-    port: 4002
--
-    hostname: 138.197.29.215
-    port: 4002
--
-    hostname: 104.238.177.174
-    port: 4002
--
-    hostname: 109.154.47.137
-    port: 4002
--
-    hostname: 104.207.138.122
-    port: 4002
--
-    hostname: 138.68.21.196
-    port: 4002
--
-    hostname: 167.114.29.36
-    port: 4002
--
-    hostname: 165.227.150.45
-    port: 4002
--
-    hostname: 37.59.70.165
-    port: 4002
--
-    hostname: 94.177.218.138
-    port: 4002
--
-    hostname: 167.114.29.55
-    port: 4002
--
-    hostname: 51.254.201.227
-    port: 4002
--
-    hostname: 167.114.43.48
-    port: 4002
--
-    hostname: 104.154.82.122
-    port: 4002
--
-    hostname: 217.182.78.226
-    port: 4002
--
-    hostname: 207.154.220.137
-    port: 4002
--
-    hostname: 195.181.219.91
-    port: 4002
--
-    hostname: 192.155.91.248
-    port: 4002
--
-    hostname: 167.114.29.53
-    port: 4002
--
-    hostname: 43.224.34.53
-    port: 4002
--
-    hostname: 167.114.43.40
-    port: 4002
--
-    hostname: 138.197.206.43
-    port: 4002
+  - hostname: 158.69.181.17
+    port: 4003
+  - hostname: 167.114.29.54
+    port: 4003
+  - hostname: 167.114.29.55
+    port: 4003
+  - hostname: 167.114.29.53
+    port: 4003
+  - hostname: 167.114.29.36
+    port: 4003
+  - hostname: 167.114.43.40
+    port: 4003
+  - hostname: 167.114.29.37
+    port: 4003
+  - hostname: 167.114.29.34
+    port: 4003
+  - hostname: 167.114.29.50
+    port: 4003
+  - hostname: 167.114.29.57
+    port: 4003
+  - hostname: 167.114.29.42
+    port: 4003
+  - hostname: 167.114.29.52
+    port: 4003
+  - hostname: 167.114.29.49
+    port: 4003
+  - hostname: 167.114.29.61
+    port: 4003
+  - hostname: 167.114.43.37
+    port: 4003
+  - hostname: 167.114.43.38
+    port: 4003
+  - hostname: 167.114.43.42
+    port: 4003
+  - hostname: 167.114.29.40
+    port: 4003
+  - hostname: 167.114.43.43
+    port: 4003
+  - hostname: 66.70.190.105
+    port: 4003
+  - hostname: 167.114.43.36
+    port: 4003
+  - hostname: 167.114.43.33
+    port: 4003
+  - hostname: 167.114.43.41
+    port: 4003
+  - hostname: 167.114.43.39
+    port: 4003
+  - hostname: 142.44.253.192
+    port: 4003
+  - hostname: 167.114.29.43
+    port: 4003
+  - hostname: 167.114.43.35
+    port: 4003
+  - hostname: 167.114.29.58
+    port: 4003
+  - hostname: 167.114.29.56
+    port: 4003
+  - hostname: 167.114.29.60
+    port: 4003
+  - hostname: 167.114.29.59
+    port: 4003
+  - hostname: 167.114.29.39
+    port: 4003
+  - hostname: 167.114.29.41
+    port: 4003
+  - hostname: 167.114.29.33
+    port: 4003
+  - hostname: 167.114.29.38
+    port: 4003
+  - hostname: 167.114.29.48
+    port: 4003
+  - hostname: 167.114.29.46
+    port: 4003
+  - hostname: 167.114.29.47
+    port: 4003
+  - hostname: 167.114.29.35
+    port: 4003
+  - hostname: 167.114.43.34
+    port: 4003
+  - hostname: 167.114.29.44
+    port: 4003
+  - hostname: 138.197.79.32
+    port: 4003
+  - hostname: 45.33.75.130
+    port: 4003
+  - hostname: 24.14.7.47
+    port: 4003
+  - hostname: 198.74.55.168
+    port: 4003
+  - hostname: 144.202.75.170
+    port: 4003
+  - hostname: 198.58.96.94
+    port: 4003
+  - hostname: 173.253.129.10
+    port: 4003
+  - hostname: 209.250.228.98
+    port: 4003
+  - hostname: 167.99.92.224
+    port: 4003
+  - hostname: 103.219.22.92
+    port: 4003
+  - hostname: 95.179.235.167
+    port: 4003
+  - hostname: 37.59.70.165
+    port: 4003
+  - hostname: 213.32.9.98
+    port: 4003
+  - hostname: 213.32.9.97
+    port: 4003
+  - hostname: 167.114.43.45
+    port: 4003
+  - hostname: 167.114.43.52
+    port: 4003
+  - hostname: 167.114.43.53
+    port: 4003
+  - hostname: 167.114.43.46
+    port: 4003
+  - hostname: 167.114.43.47
+    port: 4003
+  - hostname: 167.114.43.48
+    port: 4003
+  - hostname: 167.114.43.54
+    port: 4003
+  - hostname: 167.114.43.51
+    port: 4003
+  - hostname: 167.114.43.50
+    port: 4003
+  - hostname: 209.250.251.125
+    port: 4003
+  - hostname: 51.75.141.160
+    port: 4003
+  - hostname: 167.114.43.44
+    port: 4003
+  - hostname: 167.114.43.49
+    port: 4003
+  - hostname: 95.179.150.18
+    port: 4003
+  - hostname: 142.93.140.239
+    port: 4003
+  - hostname: 95.179.134.209
+    port: 4003
+  - hostname: 95.179.170.23
+    port: 4003
+  - hostname: 167.99.243.111
+    port: 4003
+  - hostname: 159.69.45.69
+    port: 4003
+  - hostname: 116.203.31.18
+    port: 4003
+  - hostname: 85.235.64.248
+    port: 4003
+  - hostname: 94.16.113.187
+    port: 4003
+  - hostname: 176.9.62.104
+    port: 4003
+  - hostname: 116.203.47.184
+    port: 4003
+  - hostname: 185.170.115.40
+    port: 4003
+  - hostname: 45.76.44.191
+    port: 4003
+  - hostname: 94.177.218.138
+    port: 4003
+  - hostname: 80.211.65.198
+    port: 4003
+  - hostname: 145.239.93.176
+    port: 4003
+  - hostname: 51.255.100.2
+    port: 4003

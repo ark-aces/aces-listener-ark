@@ -1,3 +1,7 @@
+server:
+  # Port the application runs on
+  port: 9091
+
 serverInfo:
   name: "AcesListenerArk"
   description: "ACES Listener implementation for Ark"
@@ -23,11 +27,13 @@ arkNetworkConfigPath: "ark_network_config/mainnet.yml"
 # Number of Transactions to scan through each execution cycle
 scanTransactionDepth: 500
 
-server:
-  # Port the application runs on
-  port: 9091
+# Number of seconds between transaction scans
+scanIntervalSec: 5
 
-# The following restricts logging to errors. Comment out lines 31-33 below to get more verbose logging
-#logging:
-#  level:
-#    com.arkaces.aces_listener_ark.ArkEventListener: ERROR
+# Enable event log controller troubleshooting event webhook callbacks, see: EventLogController
+enableEventLogController: "false"
+
+# The following restricts logging to errors. Comment out lines below to get more verbose logging
+logging:
+  level:
+    com.arkaces.aces_listener_ark.ArkEventListener: ERROR

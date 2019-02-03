@@ -24,7 +24,7 @@ public class ArkEventListener {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    @Scheduled(fixedDelay = 2000)
+    @Scheduled(fixedDelayString = "${scanIntervalSec:2}000")
     public void scanTransactions() {
         log.info("Scanning for transactions");
         try {

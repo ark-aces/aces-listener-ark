@@ -5,11 +5,13 @@ import com.arkaces.aces_server.common.json.NiceObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.web.bind.annotation.*;
 
 /**
  * This is a helper callback endpoint to log raw events for testing purposes.
  */
+@ConditionalOnProperty(value = "enableEventLogController")
 @RestController
 @Slf4j
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))

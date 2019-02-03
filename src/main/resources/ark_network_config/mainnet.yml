@@ -1,284 +1,188 @@
 scheme: http
-version: 1.0
+version: 1.6.1
 netHash: 6e84d08bd299ed97c212c886c98a57e36545c8f5d645ca7eeae63a8bd62d8988
 pubKeyHash: 0x17
 epoch: 2017-03-21 13:00:00
-seedPeers:
-  -
-    hostname: 5.39.9.240
-    port: 4001
-  -
-    hostname: 5.39.9.241
-    port: 4001
-  -
-    hostname: 5.39.9.242
-    port: 4001
-  -
-    hostname: 5.39.9.243
-    port: 4001
-  -
-    hostname: 5.39.9.244
-    port: 4001
-  -
-    hostname: 5.39.9.250
-    port: 4001
-  -
-    hostname: 5.39.9.251
-    port: 4001
-  -
-    hostname: 5.39.9.252
-    port: 4001
-  -
-    hostname: 5.39.9.253
-    port: 4001
-  -
-    hostname: 5.39.9.254
-    port: 4001
-  -
-    hostname: 5.39.9.255
-    port: 4001
-
-  -
-    hostname: 5.39.53.48
-    port: 4001
-  -
-    hostname: 5.39.53.49
-    port: 4001
-  -
-    hostname: 5.39.53.50
-    port: 4001
-  -
-    hostname: 5.39.53.51
-    port: 4001
-  -
-    hostname: 5.39.53.52
-    port: 4001
-  -
-    hostname: 5.39.53.53
-    port: 4001
-  -
-    hostname: 5.39.53.54
-    port: 4001
-  -
-    hostname: 5.39.53.55
-    port: 4001
-
-  -
-    hostname: 37.59.129.160
-    port: 4001
-  -
-    hostname: 37.59.129.161
-    port: 4001
-  -
-    hostname: 37.59.129.162
-    port: 4001
-  -
-    hostname: 37.59.129.163
-    port: 4001
-  -
-    hostname: 37.59.129.164
-    port: 4001
-  -
-    hostname: 37.59.129.165
-    port: 4001
-  -
-    hostname: 37.59.129.166
-    port: 4001
-  -
-    hostname: 37.59.129.167
-    port: 4001
-  -
-    hostname: 37.59.129.168
-    port: 4001
-  -
-    hostname: 37.59.129.170
-    port: 4001
-  -
-    hostname: 37.59.129.171
-    port: 4001
-  -
-    hostname: 37.59.129.172
-    port: 4001
-  -
-    hostname: 37.59.129.173
-    port: 4001
-  -
-    hostname: 37.59.129.174
-    port: 4001
-  -
-    hostname: 37.59.129.175
-    port: 4001
-
-  -
-    hostname: 193.70.72.80
-    port: 4001
-  -
-    hostname: 193.70.72.81
-    port: 4001
-  -
-    hostname: 193.70.72.82
-    port: 4001
-  -
-    hostname: 193.70.72.83
-    port: 4001
-  -
-    hostname: 193.70.72.84
-    port: 4001
-  -
-    hostname: 193.70.72.85
-    port: 4001
-  -
-    hostname: 193.70.72.86
-    port: 4001
-  -
-    hostname: 193.70.72.87
-    port: 4001
-  -
-    hostname: 193.70.72.88
-    port: 4001
-  -
-    hostname: 193.70.72.89
-    port: 4001
-  -
-    hostname: 193.70.72.90
-    port: 4001
-
 trustedPeers:
-  -
-    hostname: 5.39.9.240
-    port: 4001
-  -
-    hostname: 5.39.9.241
-    port: 4001
-  -
-    hostname: 5.39.9.242
-    port: 4001
-  -
-    hostname: 5.39.9.243
-    port: 4001
-  -
-    hostname: 5.39.9.244
-    port: 4001
-  -
-    hostname: 5.39.9.250
-    port: 4001
-  -
-    hostname: 5.39.9.251
-    port: 4001
-  -
-    hostname: 5.39.9.252
-    port: 4001
-  -
-    hostname: 5.39.9.253
-    port: 4001
-  -
-    hostname: 5.39.9.254
-    port: 4001
-  -
-    hostname: 5.39.9.255
-    port: 4001
-
-  -
-    hostname: 5.39.53.48
-    port: 4001
-  -
-    hostname: 5.39.53.49
-    port: 4001
-  -
-    hostname: 5.39.53.50
-    port: 4001
-  -
-    hostname: 5.39.53.51
-    port: 4001
-  -
-    hostname: 5.39.53.52
-    port: 4001
-  -
-    hostname: 5.39.53.53
-    port: 4001
-  -
-    hostname: 5.39.53.54
-    port: 4001
-  -
-    hostname: 5.39.53.55
-    port: 4001
-
-  -
-    hostname: 37.59.129.160
-    port: 4001
-  -
-    hostname: 37.59.129.161
-    port: 4001
-  -
-    hostname: 37.59.129.162
-    port: 4001
-  -
-    hostname: 37.59.129.163
-    port: 4001
-  -
-    hostname: 37.59.129.164
-    port: 4001
-  -
-    hostname: 37.59.129.165
-    port: 4001
-  -
-    hostname: 37.59.129.166
-    port: 4001
-  -
-    hostname: 37.59.129.167
-    port: 4001
-  -
-    hostname: 37.59.129.168
-    port: 4001
-  -
-    hostname: 37.59.129.170
-    port: 4001
-  -
-    hostname: 37.59.129.171
-    port: 4001
-  -
-    hostname: 37.59.129.172
-    port: 4001
-  -
-    hostname: 37.59.129.173
-    port: 4001
-  -
-    hostname: 37.59.129.174
-    port: 4001
-  -
-    hostname: 37.59.129.175
-    port: 4001
-
-  -
-    hostname: 193.70.72.80
-    port: 4001
-  -
-    hostname: 193.70.72.81
-    port: 4001
-  -
-    hostname: 193.70.72.82
-    port: 4001
-  -
-    hostname: 193.70.72.83
-    port: 4001
-  -
-    hostname: 193.70.72.84
-    port: 4001
-  -
-    hostname: 193.70.72.85
-    port: 4001
-  -
-    hostname: 193.70.72.86
-    port: 4001
-  -
-    hostname: 193.70.72.87
-    port: 4001
-  -
-    hostname: 193.70.72.88
-    port: 4001
-  -
-    hostname: 193.70.72.89
-    port: 4001
-  -
-    hostname: 193.70.72.90
-    port: 4001
+  - hostname: 94.237.25.100
+    port: 4003
+  - hostname: 116.203.46.34
+    port: 4003
+  - hostname: 116.203.18.191
+    port: 4003
+  - hostname: 116.203.42.131
+    port: 4003
+  - hostname: 94.237.82.132
+    port: 4003
+  - hostname: 185.233.104.31
+    port: 4003
+  - hostname: 94.16.120.204
+    port: 4003
+  - hostname: 193.31.24.106
+    port: 4003
+  - hostname: 85.235.64.251
+    port: 4003
+  - hostname: 94.16.115.113
+    port: 4003
+  - hostname: 159.89.109.90
+    port: 4003
+  - hostname: 193.31.27.160
+    port: 4003
+  - hostname: 148.251.178.12
+    port: 4003
+  - hostname: 5.196.105.32
+    port: 4003
+  - hostname: 199.247.16.24
+    port: 4003
+  - hostname: 159.69.248.125
+    port: 4003
+  - hostname: 80.240.27.52
+    port: 4003
+  - hostname: 217.163.28.224
+    port: 4003
+  - hostname: 45.76.93.100
+    port: 4003
+  - hostname: 176.9.17.154
+    port: 4003
+  - hostname: 104.248.130.79
+    port: 4003
+  - hostname: 178.32.65.139
+    port: 4003
+  - hostname: 178.32.65.140
+    port: 4003
+  - hostname: 178.32.65.143
+    port: 4003
+  - hostname: 5.196.105.37
+    port: 4003
+  - hostname: 51.75.64.104
+    port: 4003
+  - hostname: 104.248.36.131
+    port: 4003
+  - hostname: 5.196.105.35
+    port: 4003
+  - hostname: 178.32.65.142
+    port: 4003
+  - hostname: 178.32.65.141
+    port: 4003
+  - hostname: 178.32.65.137
+    port: 4003
+  - hostname: 5.196.105.36
+    port: 4003
+  - hostname: 5.196.105.33
+    port: 4003
+  - hostname: 5.196.105.38
+    port: 4003
+  - hostname: 178.32.65.136
+    port: 4003
+  - hostname: 5.196.105.34
+    port: 4003
+  - hostname: 178.32.65.138
+    port: 4003
+  - hostname: 185.175.58.142
+    port: 4003
+  - hostname: 45.32.238.137
+    port: 4003
+  - hostname: 54.38.120.37
+    port: 4003
+  - hostname: 213.32.41.107
+    port: 4003
+  - hostname: 5.135.52.99
+    port: 4003
+  - hostname: 54.38.120.36
+    port: 4003
+  - hostname: 5.135.22.95
+    port: 4003
+  - hostname: 5.196.105.47
+    port: 4003
+  - hostname: 151.80.125.34
+    port: 4003
+  - hostname: 54.38.120.33
+    port: 4003
+  - hostname: 54.38.120.32
+    port: 4003
+  - hostname: 151.80.125.35
+    port: 4003
+  - hostname: 46.105.160.107
+    port: 4003
+  - hostname: 54.36.121.115
+    port: 4003
+  - hostname: 51.255.105.55
+    port: 4003
+  - hostname: 213.32.41.105
+    port: 4003
+  - hostname: 213.32.41.110
+    port: 4003
+  - hostname: 35.204.210.119
+    port: 4003
+  - hostname: 51.254.249.137
+    port: 4003
+  - hostname: 5.196.105.45
+    port: 4003
+  - hostname: 178.62.247.235
+    port: 4003
+  - hostname: 54.38.120.39
+    port: 4003
+  - hostname: 5.196.105.41
+    port: 4003
+  - hostname: 213.32.41.111
+    port: 4003
+  - hostname: 213.32.41.106
+    port: 4003
+  - hostname: 51.255.25.225
+    port: 4003
+  - hostname: 142.93.229.52
+    port: 4003
+  - hostname: 51.255.81.175
+    port: 4003
+  - hostname: 46.105.160.106
+    port: 4003
+  - hostname: 54.38.120.34
+    port: 4003
+  - hostname: 5.135.22.93
+    port: 4003
+  - hostname: 5.135.22.94
+    port: 4003
+  - hostname: 5.135.22.92
+    port: 4003
+  - hostname: 54.38.119.241
+    port: 4003
+  - hostname: 91.121.134.37
+    port: 4003
+  - hostname: 5.135.52.96
+    port: 4003
+  - hostname: 151.80.125.38
+    port: 4003
+  - hostname: 5.196.100.207
+    port: 4003
+  - hostname: 151.80.125.32
+    port: 4003
+  - hostname: 46.105.160.104
+    port: 4003
+  - hostname: 5.196.105.46
+    port: 4003
+  - hostname: 5.196.105.44
+    port: 4003
+  - hostname: 54.38.120.35
+    port: 4003
+  - hostname: 151.80.125.37
+    port: 4003
+  - hostname: 5.196.105.42
+    port: 4003
+  - hostname: 213.32.41.104
+    port: 4003
+  - hostname: 51.255.105.54
+    port: 4003
+  - hostname: 51.255.105.52
+    port: 4003
+  - hostname: 151.80.125.39
+    port: 4003
+  - hostname: 5.196.105.43
+    port: 4003
+  - hostname: 54.38.120.38
+    port: 4003
+  - hostname: 51.255.105.53
+    port: 4003
+  - hostname: 5.135.52.97
+    port: 4003
+  - hostname: 213.32.41.108
+    port: 4003
