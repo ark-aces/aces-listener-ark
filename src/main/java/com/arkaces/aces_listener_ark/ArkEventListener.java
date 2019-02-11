@@ -33,13 +33,17 @@ public class ArkEventListener {
             Integer limit = 50;
             for (Integer offset = 0; offset < scanTransactionDepth; offset += limit) {
                 List<Transaction> transactions = arkClient.getTransactions(limit, offset);
-                for (Transaction transaction : transactions) {
-                    String transactionId = transaction.getId();
-                    String recipientAddress = transaction.getRecipientId();
-                    JsonNode data = objectMapper.convertValue(transaction, JsonNode.class);
-                    Integer confirmations = transaction.getConfirmations();
-                    log.info("Found transaction " + transactionId + ", confirmations = " + confirmations);
-                    eventDeliveryService.saveSubscriptionEvents(transactionId, recipientAddress, confirmations, data);
+                if (transactions != null) {
+                    for (Transaction transaction : transactions) {
+                        String transactionId = transaction.getId();
+                        String recipientAddress = transaction.getRecipientId();
+                        JsonNode data = objectMapper.convertValue(transaction, JsonNode.class);
+                        Integer confirmations = transaction.getConfirmations();
+                        log.info("Found transaction " + transactionId + ", confirmations = " + confirmations);
+                        eventDeliveryService.saveSubscriptionEvents(transactionId, recipientAddress, confirmations, data);
+                    }
+                } else {
+                    log.warn("arkClient::getTransactions returned null for transactions");
                 }
             }
         }
